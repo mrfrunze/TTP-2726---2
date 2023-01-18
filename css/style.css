@@ -126,6 +126,7 @@ picture+p {
 
 footer>p {
     margin-bottom: 0;
+    text-indent: 0;
 }
 
 /* main style */
@@ -175,6 +176,11 @@ main {
 .header__logo {
     display: block;
     width: 74px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-red);  
     cursor: pointer;
 }
 
@@ -238,7 +244,8 @@ main {
     width: 100%;
     background-color: var(--bg-yellow);
     padding: 30px 37px 28px 30px;
-    border: 1px solid var(--color-red);
+    border: 2px solid var(--color-red);
+    border-radius: 10px;
 }
 
 .aside>ul>li {
@@ -249,7 +256,8 @@ main {
     max-width: 450px;
     width: 100%;
     padding: 25px 0;
-    border: 1px solid var(--color-red);
+    border: 2px solid var(--color-red);
+    border-radius: 10px;
     margin: 50px 0 86px;
     display: flex;
     flex-direction: column;
@@ -277,7 +285,7 @@ main {
 .art {
     width: 65%;
     padding: 0px 50px 87px 0;
-    background: var(--bg-white);
+    background: url(../img/star.png) no-repeat right 5% top 6%;
 }
 
 .art ul:first-of-type {
@@ -319,7 +327,7 @@ main {
 }
 
 tbody tr {
-    border-bottom: 1px solid var(--color-primary);
+    border-top: 1px solid var(--color-primary);
     display: grid;
     grid-template: auto/repeat(4, 1fr);
     align-items: center;
@@ -367,6 +375,12 @@ tbody td:last-child {
 }
 
 /* @media style */
+@media(max-width:1450px){
+    .art{
+        background: url(../img/star.png) no-repeat right 0% top 6%;
+    }
+}
+
 @media(max-width:1350px) {
     body{
         padding: 45px 20px 0px 20px;
@@ -403,6 +417,10 @@ tbody td:last-child {
 
     .aside>ul>li {
         line-height: 35px;
+    }
+
+    .art{
+        background: var(--bg-secondary);
     }
 }
 
