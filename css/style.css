@@ -109,7 +109,7 @@ h3 {
     line-height: 34px;
     margin: 40px 0;
     text-align: center;
-    color: var(--color-green);
+    color: var(--color-red);
 }
 
 p {
@@ -584,8 +584,9 @@ tbody td:last-child {
         gap: 20px;
     }
 
+    .header__block button,
     .header__block button:first-child {
-        width: 150px;
+        width: 250px;
     }
 
     .burger-menu {
